@@ -16,7 +16,6 @@ class TermDropdown extends Component {
 	};
 
 	componentWillReceiveProps(nextProps, nextContext) {
-		console.log("Next props",nextProps);
 		if(nextProps['termList'] && nextProps['termList'].length > 0){
 			let termOptions = [];
 			nextProps['termList'].forEach((termItem)=>{

@@ -5,7 +5,6 @@ import {GET_TEAMS, GET_TERMS, SET_POSITION_LIST} from "../definitions/global_con
 export function getTermsAction(committeeId) {
 	return async (dispatch) => {
 		const response = await API.getCommitteeInfo(committeeId);
-		console.log("Response",response);
 		dispatch({type: GET_TERMS, payload: response['terms']});
 	};
 }
@@ -13,7 +12,6 @@ export function getTermsAction(committeeId) {
 export function getTeamsAction(committeeId,termId) {
 	return async (dispatch) => {
 		const response = await API.getTeamList(committeeId,termId);
-		console.log("Response",response);
 		dispatch({type: GET_TEAMS, payload: response['teams']});
 	};
 }

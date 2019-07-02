@@ -5,7 +5,6 @@ import {Sidebar,Menu,Segment,Icon} from "semantic-ui-react";
 class TeamList extends Component{
 
 	handleClick = (positions=[]) =>{
-		console.log("Changed",positions);
 		this.props.setPositionList(positions);
 	};
 

@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Button,Modal} from "semantic-ui-react";
+import {Button} from "semantic-ui-react";
 import AddPositions from "./Positions/add_positions";
 
 class PositionTree extends Component{
@@ -43,7 +43,7 @@ class PositionTree extends Component{
 						</React.Fragment>
 					);
 				})}
-				<AddPositions open = {this.state.action === "add"} item={this.state.activeObject} onClose={this.handleClose}/>
+				{/*<AddPositions open = {this.state.action === "add"} item={this.state.activeObject} onClose={this.handleClose}/>*/}
 			</ul>
 		)
 	}

@@ -4,7 +4,6 @@ import {Modal} from "semantic-ui-react";
 class AddPositions extends Component{
 	render() {
 		const {open,item} = this.props;
-		console.log("Item",item);
 		return(
 			<Modal open={open} onClose={this.props.onClose}>
 				<Modal.Header>Add position</Modal.Header>
